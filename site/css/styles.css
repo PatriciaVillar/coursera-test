@@ -1,0 +1,207 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: lightgrey;
+  border-radius: 0;
+  border: 1px;
+  border-bottom: 1px solid black;
+}
+.navbar-brand h1 { /* Restaurant name */
+  padding-top: 15px;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+  border-top: 1px solid black;
+  
+}
+#nav-list a:hover {
+  background: white;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -60px;
+}
+/* END HEADER */
+
+
+
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+/* END HOME PAGE */
+
+/* MENU CATEGORIES PAGE */
+.category-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+
+
+.menu-item-description {
+  padding: 2px 8px;
+  background-color: lightgrey;
+
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+#Chicken-menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+  text-align: left;
+  padding left: 19%
+}
+#Sushi-menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+  text-align: left;
+  padding left: 19%
+}
+#Sushi-menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+  text-align: left;
+  padding left: 19%
+}
+/* END SINGLE CATEGORY PAGE */
+
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px)  {
+  /* Header */
+  #collapsable-nav {
+   visibility: hidden;
+  }/* End Header */
+
+  /* Home Page */
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header */
+  #collapsable-nav {
+   visibility: hidden;
+  }/* End Header */
+
+  /* Home Page */
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+ 
+
+
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;;
+  }
+}
+
+
